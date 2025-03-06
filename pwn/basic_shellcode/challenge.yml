@@ -1,0 +1,24 @@
+name: "Basic_shellcode"
+author: "UnknownGuy"
+category: Pwn
+description: |
+    Basic Shellcode. Guess Architecture
+    
+    > __NOTE:__ It might take upto 2 minutes for the container to start.
+    __Author__: UnknownGuy
+value: 200
+type: container
+
+tags:
+    - Pwn
+
+extra:
+    initial: 300
+    decay: 20
+    minimum: 100
+    image: ctf_basic_shellcode:latest
+    port: 1337
+    command: ""
+    volumes: ""
+    connection_type: tcp
+state: hidden

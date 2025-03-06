@@ -1,0 +1,5 @@
+I was working on a biology assignment. I can't solve it by myself. So I’m giving it to my biology friends to see if they can solve it. They are, after all, studying DNA and mRNA right now.
+
+
+mRNA sequence: AUGCAAGGUCUCUUGACCCAGCUCACUCAUACUAUUUAG
+Key: 6, 3, 4, 3, 1, 9, 4, 5, 6, 5, 9 

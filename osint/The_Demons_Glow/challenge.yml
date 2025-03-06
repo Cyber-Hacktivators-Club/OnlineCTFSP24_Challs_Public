@@ -1,0 +1,24 @@
+name: "The Demon's Glow"
+author: "Aerys"
+category: OSINT
+description: |
+    This man witnesses a criticality, saw cherenkovs light, experiencing a gradual breakdown of his body's systems. Over time, his organs failed and his flesh deteriorated.
+    His Coworker even cried blood. After days of agony, he succumbed, his body decaying long before death. 
+
+    __Author__: Aerys
+
+value: 300
+type: container
+
+extra:
+    initial: 300
+    decay: 20
+    minimum: 100
+    image: ctf_the_demons_glow:latest
+    port: 8080
+    command: ""
+    volumes: ""
+    connection_type: "tcp"
+image: ./src
+
+state: hidden

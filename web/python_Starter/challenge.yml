@@ -1,0 +1,29 @@
+name: "python_Starter"
+author: "UnknownGuy"
+category: Web
+description: |
+    Secure file write. Right?.
+    
+    > __NOTE:__ It might take upto 2 minutes for the container to start.
+    __Author__: UnknownGuy
+value: 500
+type: container
+
+tags:
+    - Web
+
+extra:
+    initial: 500
+    decay: 20
+    minimum: 100
+    image: starter:latest
+    port: 1337
+    command: ""
+    volumes: ""
+    connection_type: web
+image: ./src/
+state: hidden
+version: "0.1"
+files:
+  - "dist/app.py"
+  - "dist/hello.py"

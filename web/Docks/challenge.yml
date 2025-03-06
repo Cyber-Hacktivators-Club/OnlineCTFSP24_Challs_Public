@@ -1,0 +1,26 @@
+name: "Docks"
+author: "ReactGuy"
+category: Web
+description: |
+    Love and exploits both start with reading the right words.
+    
+    > __NOTE:__ It might take upto 2 minutes for the container to start.
+    __Author__: ReactGuy
+
+value: 300
+type: container
+
+tags:
+    - Web
+
+extra:
+    initial: 300
+    decay: 20
+    minimum: 100
+    image: ctf_docks:latest
+    port: 80
+    command: ""
+    volumes: ""
+    connection_type: web
+
+state: hidden

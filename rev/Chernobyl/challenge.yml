@@ -1,0 +1,38 @@
+name: "Chernobyl"
+author: "Aerys"
+category: Reversing
+description: |
+    The control room is in chaos. Red warning lights flicker against the dim walls as sirens howl through the air. Engineers rush back and forth, their voices drowned out by the deafening alarm.
+    Through the reinforced glass, Reactor No. 4 looms, its core pulsating with an ominous glow. Steam billows from the pressure valves, filling the room with a suffocating heat.
+    
+    Numbers and error messages flood the control panel:
+    
+    "Coolant levels dropping..." 
+    "Core temperature rising... UNSTABLE"
+    "Emergency shutdown sequence: ENGAGED"
+    "CRITICAL FAILURE IMMINENT."
+    The system is failing. The automatic safety mechanisms are unresponsive. The final emergency be activated manually.
+    
+    Sweat drips from your forehead as you reach for the controls, but something isn't right. The reactor refuses to comply. The console's screen flashes, demanding further action. The clock is ticking.
+    
+    You don't have time to hesitate. Every second brings the core closer to meltdown.
+    
+    You need to find a way. Now.
+    
+    __Author__: Aerys
+
+value: 300
+type: container
+
+
+extra:
+    initial: 300
+    decay: 20
+    minimum: 100
+    image: ctf_rev_chernobyl:latest
+    port: 8080
+    command: ""
+    volumes: ""
+    connection_type: web
+
+state: hidden

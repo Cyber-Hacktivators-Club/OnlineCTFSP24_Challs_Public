@@ -1,0 +1,2 @@
+- Timing attack to calculate key
+- Python init bug

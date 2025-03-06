@@ -1,0 +1,1 @@
+g++ --static  /app/main.cpp -o /app/dist/main 

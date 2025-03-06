@@ -1,0 +1,32 @@
+name: "Gumshuda Evidence"
+author: "Zeyon"
+category: "Forensics"
+description: |
+    Lost and found main sab milta ha!!
+    
+    flag format: CHC{}
+    __Author__: Zeyon
+
+value: 300
+type: "static"
+
+extra:
+    initial: 400
+    decay: 20
+    minimum: 100
+    image: NONE
+    port: NONE
+    command: ""
+    volumes: ""
+    ctype: "static"
+
+image: "NONE"
+flags:
+    - {
+        type: "static",
+        content: "CHC{M!16ya_gumshud@_3V!deNc3}",
+        data: "case_insensitive",
+    }
+
+files:
+    - "challenge.img"

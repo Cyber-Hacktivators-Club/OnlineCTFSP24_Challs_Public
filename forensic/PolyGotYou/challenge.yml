@@ -1,0 +1,31 @@
+name: "PolyGotYou!"
+author: "trixycon"
+category: "forensic"
+description: "Some files wear masks, but this one takes it to another level.<br>Unravel its true identity and claim your prize!<br><br>__Author__: trixycon"
+value: 100 
+type: container
+
+tags:
+    - Misc
+    - forensics
+    - steganography
+
+image: ./src/
+
+extra:
+    initial: 100
+    decay: 10
+    minimum: 100
+    image: ctf_polygotyou_steg:latest
+    port: 8080 
+    command: ""
+    volumes: ""
+    connection_type: web
+
+
+
+# files:
+#    - dist/File.py
+state: hidden
+version: "0.1"
+

@@ -1,0 +1,27 @@
+name: "Phant0m"
+author: "ReactGuy"
+category: Web
+description: |
+    Simple Phantom
+    
+    __Author__: ReactGuy
+
+value: 400
+type: container
+
+tags:
+    - Web
+
+extra:
+    initial: 400
+    decay: 20
+    minimum: 100
+    image: ctf_phantom:latest
+    port: 1337
+    command: ""
+    volumes: ""
+    connection_type: web
+
+state: hidden
+files:
+  - "dist/phantom.zip"

@@ -1,0 +1,22 @@
+name: "Crypto Pads"
+category: "Crypto"
+description: |
+  Can you decrypt the secret flag?
+
+value: 30
+type: container
+
+
+image: ./src/
+
+extra:
+    initial: 30
+    decay: 20
+    minimum: 100
+    image: ctf_crypto_otp:latest
+    port: 8080
+    command: ""
+    volumes: ""
+    connection_type: tcp
+
+state: hidden

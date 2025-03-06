@@ -1,0 +1,29 @@
+name: "Whistleblower"
+author: "Rayn"
+category: Misc
+description: "A journalist receives a tip that an employee leaked corporate secrets via images posted on their public Instagram. The flag is hidden across 3 images, each requiring Steganography techniques.\n Your task is to uncover the flag by extracting the hidden data from all three images.\n\ndifficulty - very easy\n\nflag format: CHC{}\n\n__Author__: Rayn"
+
+value: 100 (Constant bcz we will use linear decay)
+type: 
+
+extra:
+    initial: 100
+    decay: <Will be linear>
+    minimum: 20
+    image: NONE
+    port: NONE
+    command: ""
+    volumes: ""
+    ctype: "static"
+image: "NONE"
+flags:
+    - {
+        type: "static", // Regex is must
+        content: "CHC{ST3G0_M3SS4G3_UNV13L3D}",
+        data: "case_insensitive", // all flags must be case insensitive unless needed
+    }
+
+files:
+ -"image1.jpg"
+ -"image2.jpg"
+ -"image3.jpg"

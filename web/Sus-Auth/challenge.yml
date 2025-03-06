@@ -1,0 +1,24 @@
+name: "Sus-auth"
+author: "UnknownGuy"
+category: Web
+description: "No SQL injection but still sus.\n> __NOTE:__ It might take upto 2 minutes for the container to start.\n\n__Author__: UnknownGuy"
+value: 300
+type: container
+
+tags:
+    - Web
+
+extra:
+    initial: 300
+    decay: 20
+    minimum: 100
+    image: ctf_sus:latest
+    port: 1337
+    command: ""
+    volumes: ""
+    connection_type: web
+image: ./src/
+state: hidden
+
+files:
+  - "dist/sus-auth.zip"

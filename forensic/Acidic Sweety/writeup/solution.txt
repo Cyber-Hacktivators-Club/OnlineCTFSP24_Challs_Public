@@ -1,0 +1,46 @@
+I was working on a biology assignment. I can't solve it by myself. So I’m giving it to my biology friends to see if they can solve it. They are, after all, studying DNA and mRNA right now.
+
+
+mRNA sequence: AUGCAAGGUCUCUUGACCCAGCUCACUCAUACUAUUUAG
+Key: 6, 3, 4, 3, 1, 9, 4, 5, 6, 5, 9 
+
+Solution Logic:
+Remove the Start and Stop Codons
+mRNA after removing AUG (Start) and UAG (Stop):
+CAA GGU CUC UUG ACC CAG CUC ACU CAU ACU AUU
+
+Translate Codons to Amino Acids
+CAA	Glutamine (Gln)
+GGU	Glycine (Gly)
+CUC	Leucine (Leu)
+UUG	Leucine (Leu)
+ACC	Threonine (Thr)
+CAG	Glutamine (Gln)
+CUC	Leucine (Leu)
+ACU	Threonine (Thr)
+CAU	Histidine (His)
+ACU	Threonine (Thr)
+AUU	Isoleucine (Ile)
+
+Use the Key to Extract Letters
+
+6º letter of Glutamine = m
+3º letter of Glycine = y
+4º letter of Leucine = c
+3º letter of Leucine = u
+1º letter of Threonine = t
+9º letter of Glutamine = e
+4º letter of Leucine = c
+5th letter of Threonine → o
+6th letter of Histidine → d
+5th letter of Threonine → o
+9th letter of Isoleucine → n
+
+Final Decoded Text:
+good_job_codon
+
+
+
+CTS{good_job_codon}
+
+

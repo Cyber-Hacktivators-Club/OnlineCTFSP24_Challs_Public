@@ -1,0 +1,27 @@
+name: "Shadow Extraction"
+author: "Zafir405"
+category: Reversing
+description: |
+    Deep in the shadows, something is hiding. We've found a mysterious Linux binary called shadows.
+    It asks for a passphrase but refuses to reveal anything useful.
+    Some say the truth is encrypted, buried somewhere.
+
+    Can you extract what lurks in the shadows?
+    
+    __Author__: Zafir405
+
+value: 300
+type: container
+
+
+extra:
+    initial: 300
+    decay: 20
+    minimum: 100
+    image: ctf_rev_shadow_extraction:latest
+    port: 8080
+    command: ""
+    volumes: ""
+    connection_type: web
+
+state: hidden

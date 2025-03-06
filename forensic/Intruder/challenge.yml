@@ -1,0 +1,20 @@
+name: "Intruder"
+author: "Aerys"
+category: Forensics
+description: "An attacker managed to intrude our local network and send suspicious links to most of our employees. One of them clicked it and downloaded a suspicious file and even ran it.\nThe file happened to contain a malicious exe,this granted the attacker acces to out system.\n\nThe attacker only left a message in a file and made changes to ensure persistence.\n\nWe managed to get a hold of the attackers activities.\n\n__Author__: Aerys"
+value: 400
+type: container
+
+extra:
+    initial: 400
+    decay: 20
+    minimum: 100
+    image: ctf_intruder:latest
+    port: 8080
+    command: ""
+    volumes: ""
+    connection_type: tcp
+
+files:
+   - dist/Its_Hero_time.PML
+state: hidden
